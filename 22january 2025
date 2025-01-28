@@ -1,0 +1,110 @@
+                (1st code) 
+
+class Main
+{
+    public static void main(String[] args) 
+    {
+        int a[] ={5,7,8,11,17,40};
+        int sum =0;
+        int average =0;
+
+        for (int i = 0;i<a.length; i++)     //sum
+        {
+            sum += a[i];   
+            if (a[i] % 2 == 0) 
+            {
+                System.out.println(a[i] + " even");
+            } else 
+            {
+                System.out.println(a[i] + " odd");
+            }
+        }
+        average = sum/a.length;
+
+        System.out.println("\nSum: " + sum);
+        System.out.println("Average: " + average);                               // Average
+    }
+}
+
+
+
+                (2nd code)
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        int sum = 0;
+        for (int i = 0; i <= 100; i++) 
+        {
+        sum += i;
+        }
+        System.out.println("The sum of numbers from 1 to 100 is:"+sum);
+    }
+}
+
+
+                (3rd code)
+
+public class Main
+{
+    public static void main(String[] args) 
+    {
+       for (int i = 1; i <=10; i++) 
+       {  
+        System.out.println (25 * i);
+       }
+    }
+}
+
+            (4th code)
+
+   public static int largestNumber()
+    {
+        int a = 7, b = 11, c = 2;
+        int biggest ;
+ 
+        if (a > b && a > c) 
+        {
+            biggest = a;
+        } 
+        else if (b >a && b > c) 
+        {
+            biggest = b;
+        }
+        else
+        {
+            biggest = c;
+        }
+        return biggest;
+    }
+
+
+           (5th Code)
+
+public static void primeCheck(int p)
+{
+ 
+    if (p < 2)
+    {
+     System.out.println(p + " is not a Prime Number.");
+     return;
+    }
+    boolean isPrime = true;
+    for(int i=2 ; i<=Math.sqrt(p); i++)
+    {
+     if (p%i == 0) 
+     {
+     isPrime = false;
+    break;
+     }
+    }
+     if (isPrime)
+    {
+  System.out.println(p+" is a Prime Number.");
+    } 
+        else
+        {
+            System.out.println(p + " is not a Prime Number.");
+        }
+}
