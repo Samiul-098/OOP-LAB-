@@ -1,0 +1,84 @@
+                1st code
+
+import java.util.*;
+public class Main
+{
+    String  fname;
+    String lname ;
+    int age;
+    public static void main(String[] args)
+    {
+        Main p1 = new Main();
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter your first name:");
+        p1. fname = sc.nextLine();
+        System.out.println("Enter your last name:");
+        p1. lname = sc.nextLine();
+        System.out.println("Enter your age:");
+        p1.age=sc.nextInt();
+        System.out.println(p1.toString());
+
+    }
+}
+
+
+                 2nd code
+
+                 import java.util.Scanner;
+
+public class Main {
+    String fname;
+    String lname;
+    int age;
+
+    public static void main(String[] args) {
+        Main s1 = new Main();
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter Age : ");
+        s1.age = scan.nextInt();
+
+        scan.nextLine();
+        System.out.println("Enter first name : ");
+        s1.fname = scan.nextLine();
+        System.out.println("Enter first name : ");
+        s1.lname = scan.nextLine();
+        System.out.println("Name: " + s1.fname + " " + s1.lname);
+        System.out.println("Age: " + s1.age);
+    }
+}
+
+
+
+                 3rd Code
+
+                 import java.util.Scanner;
+public class Main
+{
+    double area;
+    double circumferance;
+    final double Pi = 3.14;
+    void displayArea(double radius)
+    {
+        area = Pi * radius * radius;
+        display(area);
+    }
+    void display(double area)
+    {
+        System.out.println("Area of the Circle : " +area);
+    }
+    void displayPerimeter(double rad)
+    {
+        circumferance = 2 * Pi * rad;
+        System.out.println("Perimeter : "+ circumferance);
+    }
+    public static void main(String [] args)
+    {
+        Main circle = new Main();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Radius : ");
+        double rad = scanner.nextDouble();
+        circle.displayArea(rad);
+        circle.displayPerimeter(rad);
+    }
+}
